@@ -1,17 +1,15 @@
-
 {
-    "name": "marcelmarin/fundamentosphp",
-    "description": "ejemplo composer",
-    "type": "library",
-    "require": {
-        "nesbot/carbon": "^2.0@dev"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "MarcelMarin",
-            "email": "marcelmarin256@gmail.com"
+    "autoload": {
+        "files" :[
+            "src/file1.php",
+            "src/file2.php"
+        ],
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "Text\\": "src/"
         }
-    ],
-    "minimum-stability": "dev"
+    }
 }
